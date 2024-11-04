@@ -28,7 +28,8 @@ const tratamientos=[
     },
 ];
 
-const agregarTratamientos=({nombre, precio, imagen, stock})=>{
+const agregarTratamientos=({id, nombre, precio, imagen, stock})=>{
+    const id = tratamientos.length + 1; //
     tratamientos.push({id, nombre,precio,imagen,stock});
 }
 
@@ -43,7 +44,7 @@ const mostrarTratamientos =()=> {
     stock: ${tratamiento.stock}
     `
     }
-    console.los (mensajeInformacion);
+    console.log (mensajeInformacion);
 }
 
 const solicitarInformaciondeltratamientos=()=>{
